@@ -1,5 +1,6 @@
 # Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 Range = [0, 1]
+flag = True
 for x in Range:
     for y in Range:
         for z in Range:
