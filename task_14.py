@@ -11,4 +11,12 @@ while number > 0:
     number = number // 2
 print(list[::-1])
 
+# вариант преполавателя
 
+a = int(input())
+st = ''
+while a > 0:
+    ost = a % 2
+    st = str(ost) + st
+    a = a // 2
+print(st)
