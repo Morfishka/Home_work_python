@@ -6,7 +6,7 @@
 
 from random import randint
 
-data  = open('polynomial.txt','a')
+data  = open('polynomial.txt','w')
 
 k = int(input("Введите степень k: "))
 coeff = [randint(0,100) for i in range(k + 1)]
@@ -33,6 +33,6 @@ while j > 0:
         result = result[:len(result) - 3]
 result += ' = 0'
 print(result)
-data.write(f"{result}")
+data.write(result)
 data.close()
 
