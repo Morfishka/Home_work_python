@@ -9,7 +9,11 @@ import re
 number = input("Введите число: ")
 number = re.sub('[!@#$+-,.]', '', number)
 number = number.replace('-','')
-numbers = []
-for n in range(len(number)):
-    numbers.append(int(number[n]))
+# numbers = []
+# for n in range(len(number)):
+#     numbers.append(int(number[n]))
+# print(sum(numbers))
+
+# улучшение:
+numbers = [int(number[n]) for n in range(len(number))]
 print(sum(numbers))
